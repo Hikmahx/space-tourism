@@ -83,6 +83,9 @@
 }
 
 @media (min-width: 1280px) {
+  .hero h1 {
+    letter-spacing: 4px;
+  }
   .hero h1 div {
     font-size: 9.3rem;
     padding: 2.2rem 0;
