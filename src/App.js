@@ -13,11 +13,22 @@ function App() {
     hamburger.classList.toggle('active')
     menu.classList.toggle('active')
   }
+
+  const activeLine = (e)=>{
+    let links= document.querySelectorAll('.menu>ul>li')
+    links.forEach(link=>{
+      link.classList.remove('active');
+
+      if(e.target === link.firstElementChild){
+        link.classList.add('active')
+      }
+    })
+  }
   
   return(
     <Router>
     <div className='App relative w-100  overflow-hidden'>
-      <Navbar displayMenu={displayMenu}/>
+      <Navbar displayMenu={displayMenu} activeLine={activeLine}/>
 
         <Routes>
           <Route exact path='/' element={<Home/>}/>   
