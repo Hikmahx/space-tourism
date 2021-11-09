@@ -57,6 +57,30 @@
           }
         }
       }
+
+      @media(min-width:640px){
+
+        position: relative;
+        &::before{
+          content:'';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 0%;
+          height: 0.2rem;
+          background: rgb(168, 162, 162);
+          transition: 0.4s ease-in-out;
+        }
+  
+        &:hover{
+          position: relative;
+          &::before{
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }

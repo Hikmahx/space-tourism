@@ -78,6 +78,31 @@
   }
 }
 
+@media (min-width: 640px) {
+  .menu ul li {
+    position: relative;
+  }
+  .menu ul li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    height: 0.2rem;
+    background: #a8a2a2;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+  .menu ul li:hover {
+    position: relative;
+  }
+  .menu ul li:hover::before {
+    width: 100%;
+  }
+}
+
 .hero h1 {
   letter-spacing: 3px;
 }
