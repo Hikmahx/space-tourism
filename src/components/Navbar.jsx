@@ -20,19 +20,15 @@ const Navbar = ({displayMenu, activeLine}) => {
           <ul className='flex sm:items-center sm:justify-center text-white pr-8 uppercase h-screen sm:h-24 flex-col sm:flex-row text-lg lg:text-base font-thin'>
             <li className="mx-2 lg:mx-3 xl:mx-5 lg:h-full flex items-center my-3 active">
             <Link to={'/'} className="whitespace-nowrap"><strong className="mr-2 sm:hidden xl:inline font-semibold">00</strong> Home</Link>
-              {/* <a href='/' className="whitespace-nowrap"><strong className="mr-2 sm:hidden xl:inline font-semibold">00</strong> Home</a> */}
             </li>
             <li className="mx-2 lg:mx-3 xl:mx-5 lg:h-full flex items-center my-3">
               <Link to={'/destination'} className="whitespace-nowrap"><strong className="mr-2 sm:hidden xl:inline font-semibold">01</strong> Destination</Link>
-              {/* <a href='/destination' className="whitespace-nowrap"><strong className="mr-2 sm:hidden xl:inline font-semibold">01</strong> Destination</a> */}
             </li>
             <li className="mx-2 lg:mx-3 xl:mx-5 lg:h-full flex items-center my-3">
             <Link to={'/crew'} className="whitespace-nowrap"><strong className="mr-2 sm:hidden xl:inline font-semibold">02</strong> Crew</Link>
-              {/* <a href='/crew' className="whitespace-nowrap"><strong className="mr-2 sm:hidden xl:inline font-semibold">02</strong> Crew</a> */}
             </li>
             <li className="mx-2 lg:mx-3 xl:mx-5 lg:h-full flex items-center my-3">
             <Link to={'/technology'} className="whitespace-nowrap"><strong className="mr-2 sm:hidden xl:inline font-semibold">03</strong> Technology</Link>
-              {/* <a href='/technology' className="whitespace-nowrap"><strong className="mr-2 sm:hidden xl:inline font-semibold">03</strong> Technology</a> */}
             </li>
           </ul>
         </nav>
