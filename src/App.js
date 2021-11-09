@@ -1,6 +1,9 @@
-// import {BrowserRouter as Router, Switch, Route} from 'react-dom'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Home from './pages/Home'
+import Destination from './pages/Destination'
+import Crew from './pages/Crew'
+import Technology from './pages/Technology'
 
 
 function App() {
@@ -12,23 +15,18 @@ function App() {
   }
   
   return(
+    <Router>
     <div className='App relative w-100  overflow-hidden'>
       <Navbar displayMenu={displayMenu}/>
-      <Home/>
-    </div>
 
-    // <div className='App'>
-    //   <Switch>
-    //   <Route exact path='/' render={()=>
-    //     <Home/>
-    //     }/>        
-        
-    //   <Route exact path='/details' render={()=>
-    //     <h1>details</h1>
-    //   }/>
-    //   </Switch>
-    // </div>
-    // </Router>
+        <Routes>
+          <Route exact path='/' element={<Home/>}/>   
+          <Route exact path='/destination' element={<Destination/>}/>   
+          <Route exact path='/crew' element={<Crew/>}/>   
+          <Route exact path='/technology' element={<Technology/>}/>   
+        </Routes>
+    </div>
+    </Router>
     )
 }
 
