@@ -21,6 +21,7 @@ function App() {
 
       if(e.target === link.firstElementChild){
         link.classList.add('active')
+        displayMenu();
       }
     })
   }
