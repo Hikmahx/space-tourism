@@ -1,10 +1,11 @@
 import React from 'react'
-import logo from '../assets/shared/logo.svg'
-import hamburger from '../assets/shared/icon-hamburger.svg'
-import close from '../assets/shared/icon-close.svg'
 import { Link } from 'react-router-dom'
 
 const Navbar = ({displayMenu, activeLine}) => {
+  let logo = '/assets/shared/logo.svg';
+  let hamburger = '/assets/shared/icon-hamburger.svg';
+  let close = '/assets/shared/icon-close.svg';
+
   return (
     <header className='absolute lg:top-10 z-10 sm:pl-12 sm:ml-2 flex items-center justify-between w-full font-barlow'>
       <div className='wrapper relative flex items-center justify-between w-full'>
