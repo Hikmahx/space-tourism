@@ -4,7 +4,8 @@
     "sources": [
         "style.scss",
         "_nav.scss",
-        "_home.scss"
+        "_home.scss",
+        "_destination.scss"
     ],
     "names": [],
     "file": "style.css"
