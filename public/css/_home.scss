@@ -1,0 +1,58 @@
+.hero{
+  h1{
+    letter-spacing: 3px;
+  }
+
+  @media(min-width:1280px){
+    h1{
+      letter-spacing: 4px;
+
+      div{
+        font-size: 9.3rem;
+        padding: 2.2rem 0;
+        letter-spacing: 2px;
+      }
+    }
+
+    p{
+      max-width: 26rem;
+      letter-spacing: 0.5px;
+    }
+  }
+  
+
+  .circle{
+    @media(min-width:1280px){
+      width: 17.2rem;
+      height: 17.2rem;
+
+      p{
+        font-size: 2rem;
+        letter-spacing: 3px;
+      }
+    }
+    &:hover{
+      &::before{
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+        animation: pulse 0.7s ease-in-out infinite;
+      }
+    }
+
+  }
+
+  @keyframes pulse{
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1.5);
+    }
+  }
+}
