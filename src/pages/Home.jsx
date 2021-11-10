@@ -1,9 +1,10 @@
 import React from 'react'
-import bgMobile from '../assets/home/background-home-mobile.jpg'
-import bgTablet from '../assets/home/background-home-tablet.jpg'
-import bgDesktop from '../assets/home/background-home-desktop.jpg'
 
 const Home = () => {
+  let bgMobile = '/assets/home/background-home-mobile.jpg';
+  let bgTablet = '/assets/home/background-home-tablet.jpg';
+  let bgDesktop = '/assets/home/background-home-desktop.jpg';
+
   return (
     <div className="home-wrapper h-screen lg:overflow-hidden">
       <img className="absolute md:hidden top-0 bottom-0 w-full h-full" src={bgMobile} alt="" />
