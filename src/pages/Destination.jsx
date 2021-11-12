@@ -14,7 +14,7 @@ const Destination = () => {
       <img className="absolute hidden md:block lg:hidden top-0 bottom-0 w-full h-full" src={bgTablet} alt="" />
       <img className="absolute hidden md:hidden lg:block top-0 bottom-0 w-full h-full" src={bgDesktop} alt="" />
 
-      <div className="tabs relative mt-20 pt-2 pb-16 sm:mt-32 lg:mt-20  font-barlow text-white max-w-xs sm:max-w-2xl lg:max-w-none mx-auto lg:flex lg:items-center lg:justify-center xl:justify-between">
+      <div className="tabs relative mt-20 pt-2 pb-16 sm:pb-14 sm:mt-32 lg:mt-20  font-barlow text-white max-w-xs sm:max-w-2xl lg:max-w-none mx-auto lg:flex lg:items-center lg:justify-center xl:justify-between">
         <div className="container flex flex-col lg:flex-row text-center lg:text-left items-center justify-center mx-auto">
           <div className="tab-left w-4/5 sm:w-full xl:w-1/2">
             <h1 className="uppercase text-base tracking-widest sm:text-2xl sm:text-left"><strong className="mr-4 text-grayish-blue">01</strong>pick your destination</h1>
