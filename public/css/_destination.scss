@@ -1,3 +1,8 @@
+.destination-wrapper{
+  @media(min-width:540px){
+    min-height: 92.5vh;
+  }
+}
 .tab-right{
   ul{
     li{

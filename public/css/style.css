@@ -168,6 +168,12 @@
   }
 }
 
+@media (min-width: 540px) {
+  .destination-wrapper {
+    min-height: 92.5vh;
+  }
+}
+
 .tab-right ul li {
   position: relative;
   padding-bottom: 0.5rem;
