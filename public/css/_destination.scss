@@ -2,8 +2,23 @@
   @media(min-width:540px){
     min-height: 92.5vh;
   }
+
+  @media(min-width:1280px){
+    min-height: 100vh;
+    .tabs{
+      margin-top: 14.6%;
+    }
+    h1{
+        font-size:1.8rem;
+        letter-spacing: 5px;
+        margin-bottom: 3.4rem;
+      }
+  }
 }
 .tab-right{
+  @media(min-width:1280px){
+    padding-top: 3.6rem;
+  }
   ul{
     li{
       position: relative;
