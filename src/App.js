@@ -41,7 +41,6 @@ function App() {
 
     for (let number = 0; number < tabLinks.length; number++) {
       tabLinks[number].addEventListener('click', ()=>{
-        console.log(number)
         tabLinks.forEach(link => {
           link.classList.remove('active');
         });
