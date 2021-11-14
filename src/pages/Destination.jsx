@@ -28,7 +28,7 @@ const Destination = ({getDestination}) => {
 
             <div className="img-wrapper w-full">
               {destinations.map(destination=>(
-                <img key={destination.name} className="w-full max-w-xl py-7 px-11 sm:pt-12 sm:px-44 xl:px-14 sm:pb-12 sm:mx-auto" src={`${destination.images.png.slice(1)}`} alt="tab-img" />
+                <img key={destination.name} className="w-full max-w-2xl py-7 px-11 sm:pt-12 sm:px-44 xl:px-14 sm:pb-12 sm:mx-auto" src={`${destination.images.png.slice(1)}`} alt="tab-img" />
               ))}
             </div>
             
@@ -42,14 +42,14 @@ const Destination = ({getDestination}) => {
           </ul>
           <div className="tab-body">
           {destinations.map(destination=>(
-            <h2 key={destination.name}  className="uppercase font-belleFair text-6xl sm:text-7xl lg:text-8xl sm:mt-10 py-1 xl:mb-6">{destination.name}</h2>
+            <h2 key={destination.name}  className="uppercase font-belleFair text-6xl sm:text-7xl lg:text-8xl sm:mt-6 py-1 xl:mb-6">{destination.name}</h2>
           ))}
           {destinations.map(destination=>(
-            <p key={destination.name}  className="text-light-blue leading-6 mb-9 sm:mt-4 sm:text-lg xl:text-xl sm:mb-11 xl:mb-16 xl:tracking-wider md:max-w-lg md:mx-auto">{destination.description}</p>
+            <p key={destination.name}  className="text-light-blue leading-6 mb-3 sm:mt-4 sm:text-lg xl:text-xl sm:mb-5 xl:mb-7 xl:tracking-wider md:max-w-lg md:mx-auto">{destination.description}</p>
           ))}
             <div className="line my-6 bg-white w-full md:max-w-lg md:mx-auto"></div>
           {destinations.map(destination=>(           
-            <div key={destination.name} className="tab-info mt-8 sm:flex sm:items-center sm:justify-around xl:justify-between md:max-w-lg md:mx-auto">
+            <div key={destination.name} className="tab-info mt-2 sm:mt-0 sm:flex sm:items-center sm:justify-around xl:justify-between md:max-w-lg md:mx-auto w-full">
               <div className="distance mb-8 sm:mb-0">
                 <div className="text-light-blue text-sm sm:text-base tracking-widest mb-2">AVG. DISTANCE</div>
                 <div className="uppercase font-belleFair text-2xl">{destination.distance}</div>
