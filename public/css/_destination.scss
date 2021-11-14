@@ -60,7 +60,59 @@
 }
 
 .tab-body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:"hd" "p" "lin" "info" ;
+
   .line{
+    grid-area: lin;
     height:0.1px;
+  }
+
+  h2, p, .tab-info{
+    grid-column: 1;
+    opacity: 0;
+    transform: translateX(200%);
+
+    @media(max-width:640px){
+      flex-direction: column;
+    }
+    &.active{
+      opacity: 1;
+      transform: translateX(0%);
+    }  
+  }
+
+  h2{
+    grid-area: hd;
+    transition:opacity 0.4s, transform 0.6s 0.1s cubic-bezier(0.54, 0.24, 0.62, 0.8);
+  }
+
+  p{
+    grid-area: p;
+    transition:opacity 0.4s, transform 0.6s 0.3s  cubic-bezier(0.54, 0.24, 0.62, 0.8);
+  }
+
+  .tab-info{
+    grid-area: info;
+    transition:opacity 0.4s, transform 0.6s 0.5s cubic-bezier(0.54, 0.24, 0.62, 0.8);
+  }
+}
+
+.img-wrapper{
+  display: grid;
+  grid-area: "img"; 
+  
+  img{
+    grid-area: img;
+    opacity: 0;
+    transform: translateX(-200%);
+    transition:opacity 0.4s, transform 0.6s cubic-bezier(0.54, 0.24, 0.62, 0.8);
+
+    &.active{
+      opacity: 1;
+      transform: translateX(0%);
+      transition:opacity 0.4s, transform 0.6s cubic-bezier(0.54, 0.24, 0.62, 0.8);
+    }
   }
 }
