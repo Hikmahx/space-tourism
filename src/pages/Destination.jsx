@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import {destinations} from '../data.json'
 
-const Destination = ({getDestination}) => {
+const Destination = () => {
   let bgMobile = '/assets/destination/background-destination-mobile.jpg';
   let bgTablet = '/assets/destination/background-destination-tablet.jpg';
   let bgDesktop = '/assets/destination/background-destination-desktop.jpg';
@@ -10,6 +10,46 @@ const Destination = ({getDestination}) => {
     getDestination()
     // eslint-disable-next-line
   }, [])
+
+  const getDestination = () =>{
+    let tabLinks = document.querySelectorAll('.tab-link')
+
+    let tabImg = document.querySelectorAll('.img-wrapper img');
+    let tabHeader = document.querySelectorAll('.tab-body h2');
+    let tabDesc = document.querySelectorAll('.tab-body p');
+    let tabInfo = document.querySelectorAll('.tab-body .tab-info');
+    
+    tabImg[0].classList.add('active');
+    tabHeader[0].classList.add('active');
+    tabDesc[0].classList.add('active');
+    tabInfo[0].classList.add('active');
+
+    for (let number = 0; number < tabLinks.length; number++) {
+      tabLinks[number].addEventListener('click', ()=>{
+        tabLinks.forEach(link => {
+          link.classList.remove('active');
+        });
+        tabImg.forEach(img => {
+          img.classList.remove('active');
+        });
+        tabHeader.forEach(header=>{
+          header.classList.remove('active');
+        });
+        tabDesc.forEach(desc=>{
+          desc.classList.remove('active');
+        });
+        tabInfo.forEach(info=>{
+          info.classList.remove('active');
+        });
+        
+        tabLinks[number].classList.add('active');
+        tabImg[number].classList.add('active');    
+        tabHeader[number].classList.add('active');    
+        tabDesc[number].classList.add('active');    
+        tabInfo[number].classList.add('active');    
+      })
+    }
+  }
     
   return (
     
