@@ -1,0 +1,25 @@
+.slider{
+  h1{
+    letter-spacing: 0.2rem;
+  }
+
+  .line{
+    height: 0.1px;
+  }
+
+  .manual-navigation{
+    .btn{
+      cursor: pointer;
+      background: #464950;
+      transition: 0.2s ease-in-out;
+
+      &.active{
+        background: #fff;
+      }
+
+      &:hover{
+        background: #808186;
+      }
+    }
+  }
+}

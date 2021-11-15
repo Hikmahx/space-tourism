@@ -326,4 +326,27 @@
   transition: opacity 0.4s, transform 0.6s cubic-bezier(0.54, 0.24, 0.62, 0.8);
   transition: opacity 0.4s, transform 0.6s cubic-bezier(0.54, 0.24, 0.62, 0.8), -webkit-transform 0.6s cubic-bezier(0.54, 0.24, 0.62, 0.8);
 }
+
+.slider h1 {
+  letter-spacing: 0.2rem;
+}
+
+.slider .line {
+  height: 0.1px;
+}
+
+.slider .manual-navigation .btn {
+  cursor: pointer;
+  background: #464950;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.slider .manual-navigation .btn.active {
+  background: #fff;
+}
+
+.slider .manual-navigation .btn:hover {
+  background: #808186;
+}
 /*# sourceMappingURL=style.css.map */
