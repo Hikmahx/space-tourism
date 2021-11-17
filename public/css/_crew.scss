@@ -21,6 +21,22 @@
     height: 0.1px;
   }
 
+  .img-slider{
+    min-width: 16.5rem;
+
+    img{
+      min-width: 100%;
+    }
+  }
+
+  .slider-left{
+    .slider-info-wrapper{
+      .slider-info{
+        min-width: 100%;
+      }
+    }
+  }
+
   .manual-navigation{
     .btn{
       cursor: pointer;

@@ -353,6 +353,18 @@
   height: 0.1px;
 }
 
+.slider .img-slider {
+  min-width: 16.5rem;
+}
+
+.slider .img-slider img {
+  min-width: 100%;
+}
+
+.slider .slider-left .slider-info-wrapper .slider-info {
+  min-width: 100%;
+}
+
 .slider .manual-navigation .btn {
   cursor: pointer;
   background: #464950;
