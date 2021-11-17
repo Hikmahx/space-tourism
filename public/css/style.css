@@ -333,6 +333,12 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .slider {
+    min-height: 91.12vh;
+  }
+}
+
 @media (min-height: 960px) {
   .slider {
     min-height: 93vh;

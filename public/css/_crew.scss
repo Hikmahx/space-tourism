@@ -4,6 +4,10 @@
     min-height: 92vh;
   }
 
+  @media(min-width:1280px){
+    min-height: 91.12vh;
+  }
+
   @media(min-height:960px){
     min-height: 93vh;
 
