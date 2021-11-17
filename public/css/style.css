@@ -327,6 +327,18 @@
   transition: opacity 0.4s, transform 0.6s cubic-bezier(0.54, 0.24, 0.62, 0.8), -webkit-transform 0.6s cubic-bezier(0.54, 0.24, 0.62, 0.8);
 }
 
+@media (min-width: 540px) {
+  .slider {
+    min-height: 92vh;
+  }
+}
+
+@media (min-height: 960px) {
+  .slider {
+    min-height: 93vh;
+  }
+}
+
 .slider h1 {
   letter-spacing: 0.2rem;
 }

@@ -1,4 +1,14 @@
 .slider{
+  @media(min-width:540px){
+
+    min-height: 92vh;
+  }
+
+  @media(min-height:960px){
+    min-height: 93vh;
+
+  }
+
   h1{
     letter-spacing: 0.2rem;
   }
