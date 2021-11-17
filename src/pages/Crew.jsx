@@ -17,25 +17,35 @@ const Crew = () => {
           <h1 className="uppercase mb-10 xl:mb-0 text-base sm:text-2xl xl:text-3xl text-center sm:text-left sm:px-10 lg:px-0 sm:pt-8 xl:mt-2 xl:absolute xl:top-24"><strong className="mr-4 text-grayish-blue xl:font-bold">02</strong>meet your crew</h1>
           <div className="container flex flex-col lg:flex-row text-center lg:text-left items-center justify-center mx-auto">
 
-            <div className="slider-right md:order-2 w-4/5 xl:w-1/2">
-              <div className="slider-img-wrapper px-16 xl:px-4 max-w-xl lg:max-w-2xl mx-auto">
-                <img className="px-2 sm:px-5 lg:px-0 xl:pl-6 xl:mx-auto" src={`${crew[0].images.png.slice(1)}`} alt="slider-img"/>         
+            <div className="slider-right md:order-2 w-4/5 xl:w-1/2 overflow-hidden">
+              <div className="img-slider ADD FXN HERE">
+              <div className="slider-img-wrapper xl:px-4 max-w-xl lg:max-w-2xl mx-auto flex flex-row">
+                {crew.map(crew=>(
+                <img key={crew.name} className="mx-2 px-16 sm:px-5 lg:px-0 xl:pl-6 xl:mx-auto" src={`${crew.images.png.slice(1)}`} alt="slider-img"/>         
+                ))}
+              </div>
               </div>
               <div className="line bg-white mx-auto md:hidden"></div>
             </div>
-            <div className="slider-left md:order-1 w-4/5 xl:w-1/2 flex flex-col xl:mt-20">
-              <div className="slider-info order-2 md:order-1">
-                <h2 className="uppercase font-belleFair text-2xl sm:text-4xl xl:text-6xl sm:mt-6 py-1 xl:mb-6">
-                  <span style={{color:'#61636a'}} className="block text-base sm:text-3xl xl:text-3xl mb-1 sm:mb-3 xl:mb-5">
-                    {crew[0].role}
-                  </span>
-                  <span className="block mb-3">
-                    {crew[0].name}
-                  </span>
-                </h2>
-                <p className="text-light-blue text-base sm:text-lg xl:text-xl max-w-lg xl:max-w-md mx-auto lg:mx-0 xl:tracking-wider">
-                  {crew[0].bio}
-                </p>
+            <div className="slider-left md:order-1 w-4/5 xl:w-1/2 flex flex-col xl:mt-20 overflow-hidden">
+              <div className="slider-info-wrapper order-2 md:order-1 flex flex-row">
+
+                {crew.map(crew=>(
+                  <div key={crew.name} className="slider-info">
+
+                    <h2 className="uppercase font-belleFair text-2xl sm:text-4xl xl:text-6xl sm:mt-6 py-1 xl:mb-6 whitespace-nowrap">
+                      <span style={{color:'#61636a'}} className="block text-base sm:text-3xl xl:text-3xl mb-1 sm:mb-3 xl:mb-5">
+                        {crew.role}
+                      </span>
+                      <span className="block mb-3">
+                        {crew.name}
+                      </span>
+                    </h2>
+                    <p className="text-light-blue text-base sm:text-lg xl:text-xl max-w-lg xl:max-w-md mx-auto lg:mx-0 xl:tracking-wider">
+                      {crew.bio}
+                    </p>                  
+                  </div>
+                ))}
               </div>
               <div className="manual-navigation order-1 md:order-2 w-full h-auto flex items-center justify-center lg:justify-start mt-6 sm:mt-7 mb-4 xl:mt-28">
                 <span className="btn btn-1 w-3 h-3 xl:w-4 xl:h-4 rounded-full m-2 xl:m-3 active"></span>
