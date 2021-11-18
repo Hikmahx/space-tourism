@@ -12,8 +12,8 @@ const Technology = () => {
         <img className="absolute hidden md:block lg:hidden top-0 bottom-0 w-full h-full" src={bgTablet} alt="background-img" />
         <img className="absolute hidden md:hidden lg:block top-0 bottom-0 w-full h-full" src={bgDesktop} alt="background-img" />
 
-        <div className="technology relative mt-20 sm:mt-28 font-barlow text-white pb-20 mb-1">
-        <h1 className="uppercase text-center lg:text-left text-base sm:text-2xl tracking-widest mb-9"><strong className="mr-4 text-grayish-blue xl:font-bold">03</strong>space launch 101</h1>          
+        <div className="technology relative mt-20 sm:mt-28 md:mt-32 font-barlow text-white pb-20 mb-1 md:mb-4">
+        <h1 className="uppercase text-center md:text-left md:pl-8 text-base sm:text-2xl tracking-widest mb-9 md:mb-14 md:pb-1"><strong className="mr-4 text-grayish-blue xl:font-bold">03</strong>space launch 101</h1>          
           <div className="tech-container flex flex-col text-center mx-auto">
             <div className="tech-imgs w-full mb-10">
               <div className="tech-img-wrapper">
@@ -22,25 +22,25 @@ const Technology = () => {
               </div>
             </div>
             <div className="tech-number flex items-center justify-center font-belleFair">
-              <div className="circle flex items-center justify-center w-10 h-10 rounded-full border-2 border-white m-2">
-                <span className="">1</span>  
+              <div className="circle flex items-center justify-center w-10 h-10 md:w-16 md:h-16 rounded-full border-2 border-white m-2">
+                <span className="md:text-lg">1</span>  
               </div>
-              <div className="circle flex items-center justify-center w-10 h-10 rounded-full border-2 border-white m-2">
-                <span className="">2</span>  
+              <div className="circle flex items-center justify-center w-10 h-10 md:w-16 md:h-16 rounded-full border-2 border-white m-2">
+                <span className="md:text-lg">2</span>  
               </div>
-              <div className="circle flex items-center justify-center w-10 h-10 rounded-full border-2 border-white m-2">
-                <span className="">3</span>  
+              <div className="circle flex items-center justify-center w-10 h-10 md:w-16 md:h-16 rounded-full border-2 border-white m-2">
+                <span className="md:text-lg">3</span>  
               </div>
             </div>
 
-            <div className="tech-title mt-4">
-              <h2 className="uppercase text-base text-light-blue sm:text-xl">
+            <div className="tech-title mt-4 md:mt-9">
+              <h2 className="uppercase text-base text-light-blue sm:text-lg md:tracking-widest">
                 the terminology...
-                <div className="font-belleFair text-white text-2xl sm:text-4xl pt-1 pb-4">
+                <div className="font-belleFair text-white text-2xl sm:text-4xl pt-1 pb-4 md:pt-4 md:pb-4 md:tracking-wide">
                   {technology[0].name}
                 </div>
               </h2>
-              <p className="text-base px-2 tracking-wider text-light-blue px-6 max-w-lg mx-auto">
+              <p className="text-base px-2 tracking-wider text-light-blue px-6 max-w-lg md:text-lg md:leading-7 mx-auto">
                 {technology[0].description}
               </p>
             </div>
