@@ -12,9 +12,9 @@ const Technology = () => {
   return (
     <div>
       <div className="crew-wrapper h-screen lg:overflow-hidden">
-        <img className="absolute md:hidden top-0 bottom-0 w-full h-full" src={bgMobile} alt="" />
-        <img className="absolute hidden md:block lg:hidden top-0 bottom-0 w-full h-full" src={bgTablet} alt="" />
-        <img className="absolute hidden md:hidden lg:block top-0 bottom-0 w-full h-full" src={bgDesktop} alt="" />
+        <img className="absolute md:hidden top-0 bottom-0 w-full h-full" src={bgMobile} alt="background-img" />
+        <img className="absolute hidden md:block lg:hidden top-0 bottom-0 w-full h-full" src={bgTablet} alt="background-img" />
+        <img className="absolute hidden md:hidden lg:block top-0 bottom-0 w-full h-full" src={bgDesktop} alt="background-img" />
       </div>
     </div>
   )

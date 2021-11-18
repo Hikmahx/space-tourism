@@ -7,9 +7,9 @@ const Home = () => {
 
   return (
     <div className="home-wrapper h-screen lg:overflow-hidden">
-      <img className="absolute md:hidden top-0 bottom-0 w-full h-full" src={bgMobile} alt="" />
-      <img className="absolute hidden md:block lg:hidden top-0 bottom-0 w-full h-full" src={bgTablet} alt="" />
-      <img className="absolute hidden md:hidden lg:block top-0 bottom-0 w-full h-full" src={bgDesktop} alt="" />
+      <img className="absolute md:hidden top-0 bottom-0 w-full h-full" src={bgMobile} alt="background-img" />
+      <img className="absolute hidden md:block lg:hidden top-0 bottom-0 w-full h-full" src={bgTablet} alt="background-img" />
+      <img className="absolute hidden md:hidden lg:block top-0 bottom-0 w-full h-full" src={bgDesktop} alt="background-img" />
       
       <div className="hero relative h-full mt-24 pt-4 sm:mt-44 sm:pt-6 lg:mt-32 lg:p-0  font-barlow text-light-blue max-w-xs sm:max-w-lg lg:max-w-none mx-auto lg:flex lg:items-center lg:justify-center xl:justify-between">
         <div className="container px-6 xl:px-20 flex flex-col lg:flex-row text-center lg:text-left items-center xl:items-end justify-center mx-auto">

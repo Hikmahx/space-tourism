@@ -54,9 +54,9 @@ const Destination = () => {
   return (
     
     <div className="destination-wrapper lg:overflow-hidden">
-      <img className="absolute md:hidden top-0 bottom-0 w-full h-full" src={bgMobile} alt="" />
-      <img className="absolute hidden md:block lg:hidden top-0 bottom-0 w-full h-full" src={bgTablet} alt="" />
-      <img className="absolute hidden md:hidden lg:block top-0 bottom-0 w-full h-full" src={bgDesktop} alt="" />
+      <img className="absolute md:hidden top-0 bottom-0 w-full h-full" src={bgMobile} alt="background-img" />
+      <img className="absolute hidden md:block lg:hidden top-0 bottom-0 w-full h-full" src={bgTablet} alt="background-img" />
+      <img className="absolute hidden md:hidden lg:block top-0 bottom-0 w-full h-full" src={bgDesktop} alt="background-img" />
 
       <div className="
         tabs relative mt-20 pt-2 xl:pt-0 pb-16 sm:pb-14 xl:pb-0 sm:mt-32 font-barlow text-white max-w-xs 

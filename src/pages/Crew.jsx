@@ -35,9 +35,9 @@ const Crew = () => {
   return (
     <div>
       <div className="crew-wrapper lg:overflow-hidden">
-        <img className="absolute md:hidden top-0 bottom-0 w-full h-full" src={bgMobile} alt="" />
-        <img className="absolute hidden md:block lg:hidden top-0 bottom-0 w-full h-full" src={bgTablet} alt="" />
-        <img className="absolute hidden md:hidden lg:block top-0 bottom-0 w-full h-full" src={bgDesktop} alt="" />
+        <img className="absolute md:hidden top-0 bottom-0 w-full h-full" src={bgMobile} alt="background-img" />
+        <img className="absolute hidden md:block lg:hidden top-0 bottom-0 w-full h-full" src={bgTablet} alt="background-img" />
+        <img className="absolute hidden md:hidden lg:block top-0 bottom-0 w-full h-full" src={bgDesktop} alt="background-img" />
 
         <div className="relative slider mt-20 pb-28 md:pb-0 pt-1 font-barlow text-white lg:px-10 xl:px-20 xl:mx-20 lg:flex lg:flex-col lg:justify-end">
           <h1 className="uppercase mb-10 xl:mb-0 text-base sm:text-2xl xl:text-3xl text-center sm:text-left sm:px-10 lg:px-0 sm:pt-8 xl:mt-6"><strong className="mr-4 text-grayish-blue xl:font-bold">02</strong>meet your crew</h1>
