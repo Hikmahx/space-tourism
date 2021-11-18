@@ -345,6 +345,10 @@
   }
 }
 
+.slider .container {
+  max-height: 81vh;
+}
+
 .slider h1 {
   letter-spacing: 0.2rem;
 }
@@ -359,6 +363,12 @@
 
 .slider .img-slider img {
   min-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .slider .slider-left {
+    min-height: 19rem;
+  }
 }
 
 .slider .slider-left .slider-info-wrapper .slider-info {
