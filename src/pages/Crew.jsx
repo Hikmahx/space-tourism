@@ -1,10 +1,36 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {crew} from '../data.json'
 
 const Crew = () => {
   let bgMobile = '/assets/crew/background-crew-mobile.jpg'
   let bgTablet = '/assets/crew/background-crew-tablet.jpg'
   let bgDesktop = '/assets/crew/background-crew-desktop.jpg'
+
+  useEffect(()=>{
+    sliderCrew()
+    // eslint-disable-next-line
+  }, [])
+
+  const sliderCrew = () =>{
+    let infoSlider = document.querySelector('.slider-info-wrapper');
+    let imgSlider = document.querySelector('.img-slider');
+    let btns = document.querySelectorAll('.btn');
+    
+    for(let counter = 0; counter < btns.length; counter ++){
+      btns[counter].addEventListener('click', (e)=>{
+        btns.forEach(btn=>btn.classList.remove('active'));
+        btns[counter].classList.add('active');
+
+        let eachImg = imgSlider.scrollWidth/4
+        let eachInfo = infoSlider.scrollWidth/4
+        imgSlider.style.transform = `translateX(${-eachImg * (counter)}px)`
+        infoSlider.style.transform = `translateX(${-eachInfo * (counter)}px)`
+        imgSlider.style.transition = '0.4s ease-in-out'
+        infoSlider.style.transition = '0.4s ease-in-out'
+
+      })
+    }
+  }
 
   return (
     <div>
@@ -14,7 +40,7 @@ const Crew = () => {
         <img className="absolute hidden md:hidden lg:block top-0 bottom-0 w-full h-full" src={bgDesktop} alt="" />
 
         <div className="relative slider mt-20 pb-28 md:pb-0 pt-1 font-barlow text-white lg:px-10 xl:px-20 xl:mx-20 lg:flex lg:flex-col lg:justify-end">
-          <h1 className="uppercase mb-10 xl:mb-0 text-base sm:text-2xl xl:text-3xl text-center sm:text-left sm:px-10 lg:px-0 sm:pt-8 xl:mt-2 xl:absolute xl:top-24"><strong className="mr-4 text-grayish-blue xl:font-bold">02</strong>meet your crew</h1>
+          <h1 className="uppercase mb-10 xl:mb-0 text-base sm:text-2xl xl:text-3xl text-center sm:text-left sm:px-10 lg:px-0 sm:pt-8 xl:mt-6"><strong className="mr-4 text-grayish-blue xl:font-bold">02</strong>meet your crew</h1>
           <div className="container flex flex-col lg:flex-row text-center lg:text-left items-center justify-center mx-auto">
 
             <div className="slider-right md:order-2 w-4/5 xl:w-1/2 overflow-hidden">
@@ -33,7 +59,7 @@ const Crew = () => {
                 {crew.map(crew=>(
                   <div key={crew.name} className="slider-info">
 
-                    <h2 className="uppercase font-belleFair text-2xl sm:text-4xl xl:text-6xl sm:mt-6 py-1 xl:mb-6 whitespace-nowrap">
+                    <h2 className="uppercase font-belleFair text-2xl sm:text-4xl xl:text-5xl sm:mt-6 py-1 xl:mb-6 whitespace-nowrap">
                       <span style={{color:'#61636a'}} className="block text-base sm:text-3xl xl:text-3xl mb-1 sm:mb-3 xl:mb-5">
                         {crew.role}
                       </span>
@@ -47,7 +73,7 @@ const Crew = () => {
                   </div>
                 ))}
               </div>
-              <div className="manual-navigation order-1 md:order-2 w-full h-auto flex items-center justify-center lg:justify-start mt-6 sm:mt-7 mb-4 xl:mt-28">
+              <div className="manual-navigation order-1 md:order-2 w-full h-auto flex items-center justify-center lg:justify-start mt-6 sm:mt-7 mb-4 xl:mt-16">
                 <span className="btn btn-1 w-3 h-3 xl:w-4 xl:h-4 rounded-full m-2 xl:m-3 active"></span>
                 <span className="btn btn-2 w-3 h-3 xl:w-4 xl:h-4 rounded-full m-2 xl:m-3"></span>
                 <span className="btn btn-3 w-3 h-3 xl:w-4 xl:h-4 rounded-full m-2 xl:m-3"></span>
