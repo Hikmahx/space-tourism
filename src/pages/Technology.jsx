@@ -1,10 +1,47 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {technology} from '../data.json'
 
 const Technology = () => {
   let bgMobile ='/assets/technology/background-technology-mobile.jpg'
   let bgTablet ='/assets/technology/background-technology-tablet.jpg'
   let bgDesktop = '/assets/technology/background-technology-desktop.jpg'
+
+  useEffect(()=>{
+    getTechnologies()
+    // eslint-disable-next-line    
+  },[])
+  
+  const getTechnologies = ()=>{
+    let techHeader = document.querySelectorAll('.tech-text h2')
+    let techText = document.querySelectorAll('.tech-text p')
+    let techImg = document.querySelectorAll('.tech-img-wrapper')
+    let circles = document.querySelectorAll('.tech-number .circle')
+
+    techHeader[0].classList.add('active')
+    techText[0].classList.add('active')
+    techImg[0].classList.add('active')
+
+    for (let number = 0; number < circles.length; number++) {
+      circles[number].addEventListener('click', ()=>{
+        circles.forEach(circle=>{circle.classList.remove('active')})
+        circles[number].classList.add('active')
+        techHeader.forEach(header=>{
+          header.classList.remove('active');
+        })
+        techText.forEach(text=>{
+          text.classList.remove('active');
+        })
+        techImg.forEach(img=>{
+          img.classList.remove('active')
+        })
+
+        techHeader[number].classList.add('active');
+        techText[number].classList.add('active');
+        techImg[number].classList.add('active');
+      })
+    }
+  }
+
 
   return (
       <div className="tech-wrapper lg:overflow-hidden">
@@ -24,13 +61,13 @@ const Technology = () => {
             ))}
             </div>
             <div className="tech-number lg:flex-1 lg:order-1 flex lg:flex-col items-center lg:items-start justify-center font-belleFair">
-              <div className="circle active flex items-center justify-center w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full border-2 border-white m-2 lg:m-3">
+              <div className="circle active flex items-center justify-center w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full border-2 border-grayish-blue hover:border-white cursor-pointer transition-colors m-2 lg:m-3">
                 <span className="md:text-lg lg:text-2xl xl:text-3xl">1</span>  
               </div>
-              <div className="circle flex items-center justify-center w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full border-2 border-white m-2 lg:m-3">
+              <div className="circle flex items-center justify-center w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full border-2 border-grayish-blue hover:border-white cursor-pointer transition-colors m-2 lg:m-3">
                 <span className="md:text-lg lg:text-2xl xl:text-3xl">2</span>  
               </div>
-              <div className="circle flex items-center justify-center w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full border-2 border-white m-2 lg:m-3">
+              <div className="circle flex items-center justify-center w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full border-2 border-grayish-blue hover:border-white cursor-pointer transition-colors m-2 lg:m-3">
                 <span className="md:text-lg lg:text-2xl xl:text-3xl">3</span>  
               </div>
             </div>
