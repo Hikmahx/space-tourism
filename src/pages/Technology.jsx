@@ -22,7 +22,7 @@ const Technology = () => {
               </div>
             </div>
             <div className="tech-number lg:flex-1 lg:order-1 flex lg:flex-col items-center lg:items-start justify-center font-belleFair">
-              <div className="circle flex items-center justify-center w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full border-2 border-white m-2 lg:m-3">
+              <div className="circle active flex items-center justify-center w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full border-2 border-white m-2 lg:m-3">
                 <span className="md:text-lg lg:text-2xl xl:text-3xl">1</span>  
               </div>
               <div className="circle flex items-center justify-center w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full border-2 border-white m-2 lg:m-3">

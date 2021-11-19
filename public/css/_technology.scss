@@ -1,4 +1,11 @@
 .technology{
+  .circle{
+    &.active{
+      background: #fff;
+      color: rgb(11, 13, 23);
+    }
+  }
+
   @media(min-width:1280px){
     margin-top: 14.4%;
 

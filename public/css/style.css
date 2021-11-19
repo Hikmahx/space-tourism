@@ -390,6 +390,11 @@
   background: #808186;
 }
 
+.technology .circle.active {
+  background: #fff;
+  color: #0b0d17;
+}
+
 @media (min-width: 1280px) {
   .technology {
     margin-top: 14.4%;
