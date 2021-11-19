@@ -7,7 +7,7 @@ const Navbar = ({displayMenu, activeLine}) => {
   let close = '/assets/shared/icon-close.svg';
 
   return (
-    <header className='absolute lg:top-10 z-10 sm:pl-12 sm:ml-2 flex items-center justify-between w-full font-barlow'>
+    <header className='absolute z-20 lg:top-10 z-10 sm:pl-12 sm:ml-2 flex items-center justify-between w-full font-barlow'>
       <div className='wrapper relative flex items-center justify-between w-full'>
         <div className='logo lg:w-2/5 p-6 sm:p-0'>
           <img src={logo} alt='logo' />
