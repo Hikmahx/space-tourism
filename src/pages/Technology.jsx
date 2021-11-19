@@ -54,7 +54,7 @@ const Technology = () => {
           <div className="tech-container flex flex-col lg:flex-row text-center mx-auto">
             <div className="tech-imgs lg:w-2/5 lg:order-3 w-full mb-10 lg:mb-0">
             {technology.map(technology=>(
-              <div className="tech-img-wrapper">
+              <div key={technology.name} className="tech-img-wrapper">
                 <img className="lg:hidden w-full" src={technology.images.landscape} alt="technology-img"/>
                 <img className="hidden lg:block w-full" src={technology.images.portrait} alt="technology-img"/>                
               </div>
@@ -74,7 +74,7 @@ const Technology = () => {
 
             <div className="tech-text lg:w-2/5 lg:order-2 lg:text-left mt-4 md:mt-9 lg:mt-0 lg:mr-4 xl:mr-0 lg:flex lg:flex-col justify-center">
               {technology.map(technology=>(
-              <h2 className="uppercase text-base text-light-blue sm:text-lg md:tracking-widest">
+              <h2 key={technology.name} className="uppercase text-base text-light-blue sm:text-lg md:tracking-widest">
                 the terminology...
                   <div className="font-belleFair text-white text-2xl sm:text-4xl xl:text-6xl pt-1 pb-4 md:pt-4 xl:pb-2  md:tracking-wide">
                     {technology.name}
@@ -82,7 +82,7 @@ const Technology = () => {
               </h2>
               ))}
               {technology.map(technology=>(
-                <p className="text-base tracking-wider xl:tracking-widest text-light-blue px-6 lg:px-0 max-w-lg lg:max-w-md md:text-lg md:leading-7 lg:leading-8 mx-auto lg:mx-0">
+                <p key={technology.name} className="text-base tracking-wider xl:tracking-widest text-light-blue px-6 lg:px-0 max-w-lg lg:max-w-md md:text-lg md:leading-7 lg:leading-8 mx-auto lg:mx-0">
                   {technology.description}
                 </p>  
               ))}
