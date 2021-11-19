@@ -409,6 +409,22 @@
   }
 }
 
+.technology h2, .technology p, .technology .tech-img-wrapper {
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity 0.6s, -webkit-transform 0.3s 0.1s cubic-bezier(0.54, 0.24, 0.62, 0.8);
+  transition: opacity 0.6s, -webkit-transform 0.3s 0.1s cubic-bezier(0.54, 0.24, 0.62, 0.8);
+  transition: opacity 0.6s, transform 0.3s 0.1s cubic-bezier(0.54, 0.24, 0.62, 0.8);
+  transition: opacity 0.6s, transform 0.3s 0.1s cubic-bezier(0.54, 0.24, 0.62, 0.8), -webkit-transform 0.3s 0.1s cubic-bezier(0.54, 0.24, 0.62, 0.8);
+}
+
+.technology h2.active, .technology p.active, .technology .tech-img-wrapper.active {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .technology .tech-text {
   display: -ms-grid;
   display: grid;

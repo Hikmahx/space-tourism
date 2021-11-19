@@ -17,6 +17,18 @@
       width:47%;
     }
   }
+
+  h2, p, .tech-img-wrapper{
+    opacity: 0;
+    transform: translateY(50%);
+    transition:opacity 0.6s, transform 0.3s 0.1s cubic-bezier(0.54, 0.24, 0.62, 0.8);
+
+
+    &.active{
+      opacity: 1;
+      transform:translateY(0);
+    }
+  }
   
   .tech-text{
     display: grid;
