@@ -389,4 +389,16 @@
 .slider .manual-navigation .btn:hover {
   background: #808186;
 }
+
+@media (min-width: 1280px) {
+  .technology {
+    margin-top: 14.4%;
+  }
+  .technology h1 {
+    margin-bottom: 2%;
+  }
+  .technology .tech-text {
+    width: 47%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
