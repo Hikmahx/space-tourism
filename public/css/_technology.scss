@@ -17,4 +17,26 @@
       width:47%;
     }
   }
+  
+  .tech-text{
+    display: grid;
+    grid-template-areas: "h2" "p";
+
+    h2{
+      grid-area: h2;
+    }
+
+    p{
+      grid-area: p;
+    }
+  }
+
+  .tech-imgs{
+    display: grid;
+    grid-template-areas: 'img';
+
+    .tech-img-wrapper{
+      grid-area: img;
+    }
+  }
 }
