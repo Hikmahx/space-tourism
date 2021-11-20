@@ -44,10 +44,10 @@ const Crew = () => {
           <div className="container flex flex-col lg:flex-row text-center lg:text-left items-center justify-center mx-auto">
 
             <div className="slider-right md:order-2 w-4/5 xl:w-1/2 overflow-hidden">
-              <div className="img-slider ADD FXN HERE">
+              <div className="img-slider">
               <div className="slider-img-wrapper xl:px-4 max-w-xl lg:max-w-2xl mx-auto flex flex-row">
                 {crew.map(crew=>(
-                <img key={crew.name} className="mx-2 px-16 sm:px-5 lg:px-0 xl:pl-6 xl:mx-auto" src={`${crew.images.png.slice(1)}`} alt="slider-img"/>         
+                <img key={crew.name} className="mx-2 px-16 sm:px-5 lg:px-0 xl:px-6 xl:mx-auto" src={`${crew.images.png.slice(1)}`} alt="slider-img"/>         
                 ))}
               </div>
               </div>
