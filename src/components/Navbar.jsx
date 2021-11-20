@@ -1,10 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const Navbar = ({displayMenu, activeLine}) => {
   let logo = '/assets/shared/logo.svg';
   let hamburger = '/assets/shared/icon-hamburger.svg';
   let close = '/assets/shared/icon-close.svg';
+
+  useEffect(()=>{
+    displayLine()
+  },[]);
+
+  const displayLine= ()=>{
+    let url = window.location.pathname
+    let urlArray = url.split('/')
+    let pathName = urlArray.at('-1')
+  
+    let links= document.querySelectorAll('.menu>ul>li')
+    links.forEach(link=>{
+      link.classList.remove('active');
+      if(url.length >1 && link.textContent.toLowerCase().includes(pathName)){
+        link.classList.add('active');
+      }if(url.length <2){
+        links[0].classList.add('active');
+      }
+    })
+  }
+
 
   return (
     <header className='absolute z-20 lg:top-10 z-10 sm:pl-12 sm:ml-2 flex items-center justify-between w-full font-barlow'>
