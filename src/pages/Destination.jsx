@@ -11,6 +11,8 @@ const Destination = () => {
     // eslint-disable-next-line
   }, [])
 
+  document.title = 'Space Tourism Destination'
+
   const getDestination = () =>{
     let tabLinks = document.querySelectorAll('.tab-link')
 

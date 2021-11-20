@@ -11,6 +11,9 @@ const Crew = () => {
     // eslint-disable-next-line
   }, [])
 
+  document.title = 'Space Tourism Crew'
+  
+
   const sliderCrew = () =>{
     let infoSlider = document.querySelector('.slider-info-wrapper');
     let imgSlider = document.querySelector('.img-slider');

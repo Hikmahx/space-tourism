@@ -5,6 +5,9 @@ const Home = () => {
   let bgTablet = '/assets/home/background-home-tablet.jpg';
   let bgDesktop = '/assets/home/background-home-desktop.jpg';
 
+  document.title = 'Space Tourism'
+
+
   return (
     <div className="home-wrapper h-screen lg:overflow-hidden">
       <img className="absolute md:hidden top-0 bottom-0 w-full h-full" src={bgMobile} alt="background-img" />

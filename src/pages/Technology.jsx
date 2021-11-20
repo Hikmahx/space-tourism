@@ -10,6 +10,9 @@ const Technology = () => {
     getTechnologies()
     // eslint-disable-next-line    
   },[])
+
+  document.title = 'Space Tourism Technology'
+
   
   const getTechnologies = ()=>{
     let techHeader = document.querySelectorAll('.tech-text h2')
