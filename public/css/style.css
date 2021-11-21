@@ -442,6 +442,9 @@
   display: -ms-grid;
   display: grid;
       grid-template-areas: "h2" "p";
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .technology .tech-text h2 {
