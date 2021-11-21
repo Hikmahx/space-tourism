@@ -103,6 +103,10 @@
   }
 }
 
+.home-wrapper {
+  height: 85.8vh;
+}
+
 .hero h1 {
   letter-spacing: 3px;
 }
