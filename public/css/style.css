@@ -104,7 +104,14 @@
 }
 
 .home-wrapper {
-  height: 85.8vh;
+  min-height: 81vh;
+}
+
+@media (min-width: 1280px) {
+  .home-wrapper {
+    min-height: 80vh;
+    height: 85.8vh;
+  }
 }
 
 .hero h1 {
