@@ -397,9 +397,22 @@
   color: #0b0d17;
 }
 
+@media (min-width: 480px) {
+  .technology {
+    min-height: 92vh;
+  }
+}
+
+@media (min-height: 960px) {
+  .technology {
+    min-height: 93vh;
+  }
+}
+
 @media (min-width: 1280px) {
   .technology {
     margin-top: 14.4%;
+    min-height: 50vh;
   }
   .technology h1 {
     margin-bottom: 2%;
