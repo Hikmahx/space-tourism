@@ -16,6 +16,7 @@ const Navbar = ({displayMenu, activeLine}) => {
     let pathName = urlArray.at('-1')
   
     let links= document.querySelectorAll('.menu>ul>li')
+    let logo = document.querySelector('.logo')
     links.forEach(link=>{
       link.classList.remove('active');
       if(url.length >1 && link.textContent.toLowerCase().includes(pathName)){
@@ -24,6 +25,11 @@ const Navbar = ({displayMenu, activeLine}) => {
         links[0].classList.add('active');
       }
     })
+    
+    logo.addEventListener('click', ()=>{
+      links.forEach(link=> link.classList.remove('active'))
+      links[0].classList.add('active');
+    })
   }
 
 
@@ -31,7 +37,9 @@ const Navbar = ({displayMenu, activeLine}) => {
     <header className='absolute z-20 lg:top-10 z-10 sm:pl-12 sm:ml-2 flex items-center justify-between w-full font-barlow'>
       <div className='wrapper relative flex items-center justify-between w-full'>
         <div className='logo lg:w-2/5 p-6 sm:p-0'>
+          <Link to={'/'} className="cursor-pointer">
           <img src={logo} alt='logo' />
+          </Link>
         </div>
         <div className='header-line absolute left-28 z-10 bg-white hidden lg:block'></div>
         <div onClick={displayMenu} className="hamburger-menu z-10 m-6 sm:m-0 sm:hidden cursor-pointer flex flex-col items-center">
