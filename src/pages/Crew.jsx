@@ -62,7 +62,7 @@ const Crew = () => {
                 {crew.map(crew=>(
                   <div key={crew.name} className="slider-info">
 
-                    <h2 className="uppercase font-belleFair text-2xl sm:text-4xl xl:text-5xl sm:mt-6 py-1 xl:mb-6 whitespace-nowrap">
+                    <h2 className="uppercase font-belleFair text-2xl sm:text-4xl xl:text-5xl sm:mt-6 py-1 xl:mb-6">
                       <span style={{color:'#61636a'}} className="block text-base sm:text-3xl xl:text-3xl mb-1 sm:mb-3 xl:mb-5">
                         {crew.role}
                       </span>
