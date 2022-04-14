@@ -19,9 +19,9 @@ const Home = () => {
           <div className="flex-1 sm:pb-28 lg:pb-0 ">
             <h1 className="uppercase text-base xl:text-3xl">
             So, you want to travel to
-            <div className="font-belleFair text-white text-7xl sm:text-9xl py-7">
+            <span className="font-belleFair block text-white text-7xl sm:text-9xl py-7">
             Space
-            </div>
+            </span>
             </h1>
             <p className="text-lg px-2 xl:leading-8">
               Let’s face it; if you want to go to space, you might as well genuinely go to 
